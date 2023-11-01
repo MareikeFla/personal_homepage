@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --baseColor: #f6f6f6;
+  --brighterColor: #ffffff;
+  --darkerColor: #edeff1;
+  --highlightColor: rgb(2, 173, 209, 0.8);
+  --shadow: #c9c7c7 0 0 25px 8px;
+}
+
+html {
+  background-color: var(--baseColor);
+}
+
+body {
+  background-color: var(--baseColor);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.navBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  list-style: none;
+  height: 3rem;
+  width: 20rem;
+  border-radius: 3rem;
+  box-shadow: var(--shadow);
+}
+
+.colorBox {
+  display: flex;
+  width: max-content;
+  margin: 0.5rem 0 1rem 11rem;
+}
+
+.switch {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  background-color: black;
+}
+
+.highlightDott {
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+  border-radius: 1rem;
+}
+
+.switch,
+.highlightDott:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.card {
+  width: 70%;
+  height: 15rem;
+  margin: 0 auto 2rem auto;
+  border-radius: 10px;
+}
+
+.card:first-child {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.welcome {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  color: var(--highlightColor);
+  text-shadow: 1px 4px 6px var(--baseColor), 0 0 0 #000,
+    1px 4px 6px var(--baseColor);
+}
+
+.card:not(:first-child) {
+  background-color: var(--darkerColor);
+}

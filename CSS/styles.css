@@ -79,7 +79,6 @@ nav {
   margin: 0 auto 2rem auto;
   border-radius: 10px;
 }
-
 .card:first-child {
   display: flex;
   justify-content: center;
@@ -90,8 +89,8 @@ nav {
   margin-top: 4rem;
   font-size: 2.5rem;
   color: var(--highlightColor);
-  text-shadow: 1px 4px 6px var(--baseColor), 0 0 0 #000,
-    1px 4px 6px var(--baseColor);
+  text-shadow: 1px 2px 2px var(--baseColor), 0 0 0 #000,
+    1px 4px 2px var(--baseColor);
 }
 
 .card:not(:first-child) {

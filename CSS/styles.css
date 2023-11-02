@@ -23,22 +23,23 @@ html {
 
 body {
   background-color: var(--baseColor);
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
+  height: 2rem;
+  width: 100%;
+  background-color: var(--baseColor);
 }
 
-nav {
+/* nav {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-}
+} */
 
-.navBox {
+/* .navBox {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,12 +49,14 @@ nav {
   width: 20rem;
   border-radius: 3rem;
   box-shadow: var(--shadow);
-}
+} */
 
 .colorBox {
   display: flex;
   width: max-content;
-  margin: 0.5rem 0 1rem 11rem;
+  margin: 0 0 0 11rem;
+  position: sticky;
+  top: 0;
 }
 
 .switchlight {
@@ -66,8 +69,31 @@ nav {
 .highlightDott {
   width: 1rem;
   height: 1rem;
-  background-color: red;
   border-radius: 1rem;
+}
+
+.highlightDott.red {
+  background-color: red;
+}
+
+.highlightDott.orange {
+  background-color: orange;
+}
+
+.highlightDott.yellow {
+  background-color: yellow;
+}
+
+.highlightDott.green {
+  background-color: green;
+}
+
+.highlightDott.blue {
+  background-color: blue;
+}
+
+.highlightDott.purple {
+  background-color: purple;
 }
 
 .switchlight,
@@ -76,7 +102,7 @@ nav {
 }
 
 .card {
-  width: 70%;
+  width: 45rem;
   height: 15rem;
   margin: 0 auto 2rem auto;
   border-radius: 10px;
@@ -111,8 +137,7 @@ nav {
 }
 
 .card:not(:first-child):hover {
-  width: 75%;
-  height: 15rem;
+  width: 47rem;
   background-color: var(--brighterColor);
   box-shadow: var(--shadow);
 }
@@ -130,7 +155,7 @@ nav {
   padding-left: 15px;
   font-size: 1.3rem;
   color: var(--highlightColor);
-  box-shadow: var(--darkestColor) 3px 3px 10px 2px;
+  box-shadow: var(--darkestColor) 7px 7px 10px 2px;
 }
 
 .projectTitle,
@@ -162,7 +187,6 @@ nav {
   top: 10rem;
   left: 4rem;
   display: flex;
-  outline: 2px solid green;
   width: 70%;
   flex-wrap: wrap;
 }
@@ -170,10 +194,13 @@ nav {
 .tag {
   height: 1.5rem;
   width: fit-content;
-  outline: 1px solid hotpink;
-  margin: 7px;
-  padding: 3px;
+  margin: 0 14px 0 0;
+  padding: 5px;
   border-radius: 2px;
+  background-color: var(--baseColor);
+  font-size: 0.9rem;
+  box-shadow: var(--highlightColor) 0 0 3px 2px;
+  color: var(--textcolor);
 }
 
 footer {

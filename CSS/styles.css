@@ -11,8 +11,10 @@
   --baseColor: #f6f6f6;
   --brighterColor: #ffffff;
   --darkerColor: #edeff1;
+  --darkestColor: #d2d3d4;
   --highlightColor: rgb(2, 173, 209, 0.8);
   --shadow: #c9c7c7 0 0 25px 8px;
+  --textcolor: #464646;
 }
 
 html {
@@ -85,7 +87,6 @@ nav {
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
-  outline: 2px solid hotpink;
 }
 
 .card:first-child p {
@@ -106,6 +107,7 @@ nav {
   background-color: var(--darkerColor);
   transition: all 0.2s ease-in-out;
   position: relative;
+  letter-spacing: 1px;
 }
 
 .card:not(:first-child):hover {
@@ -123,6 +125,55 @@ nav {
   position: absolute;
   top: 30px;
   left: -10px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-size: 1.3rem;
+  color: var(--highlightColor);
+  box-shadow: var(--darkestColor) 3px 3px 10px 2px;
+}
+
+.projectTitle,
+.projectUndertitle,
+.puplishedYear {
+  width: fit-content;
+  position: absolute;
+  color: var(--textcolor);
+}
+
+.projectTitle {
+  top: 5.5rem;
+  left: 4rem;
+  font-weight: normal;
+}
+
+.projectUndertitle {
+  top: 7.5rem;
+  left: 4rem;
+}
+
+.puplishedYear::before {
+  margin: 0 5px;
+  content: "•";
+}
+
+.tagBox {
+  position: absolute;
+  top: 10rem;
+  left: 4rem;
+  display: flex;
+  outline: 2px solid green;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.tag {
+  height: 1.5rem;
+  width: fit-content;
+  outline: 1px solid hotpink;
+  margin: 7px;
+  padding: 3px;
+  border-radius: 2px;
 }
 
 footer {
@@ -135,6 +186,6 @@ footer {
 
 footer a,
 footer p {
-  color: #c9c9c9;
+  color: var(--darkestColor);
   margin: 0 5px;
 }

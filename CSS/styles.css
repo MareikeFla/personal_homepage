@@ -27,6 +27,7 @@ body {
 
 main {
   max-width: 780px;
+  min-width: 300px;
   margin: 0 auto;
   position: relative;
 }
@@ -124,9 +125,7 @@ main {
 /* STYLING PROJECT CARDS */
 
 .card {
-  width: 80vw;
-  max-width: 700px;
-  min-width: 300px;
+  width: 90%;
   height: 15rem;
   margin: 0 auto 2rem auto;
   border-radius: 10px;
@@ -140,7 +139,7 @@ main {
 }
 @media (hover: hover) {
   .card:not(.welcomeCard):hover {
-    width: 47rem;
+    width: 95%;
     background-color: var(--brighterColor);
     box-shadow: var(--shadow);
   }

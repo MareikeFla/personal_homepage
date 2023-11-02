@@ -56,7 +56,7 @@ header {
   width: max-content;
   margin: 0 0 0 11rem;
   position: sticky;
-  top: 0;
+  top: 0;1
 }
 
 .switchlight {
@@ -102,7 +102,8 @@ header {
 }
 
 .card {
-  width: 45rem;
+  width: 80vw;
+  max-width: 700px;
   height: 15rem;
   margin: 0 auto 2rem auto;
   border-radius: 10px;

@@ -54,39 +54,39 @@ main {
   margin: 5px;
 }
 
-.highlightDott {
+.highlightdot {
   width: 1rem;
   height: 1rem;
   border-radius: 1rem;
   margin: 5px;
 }
 
-.highlightDott.red {
+.highlightdot.red {
   background-color: red;
 }
 
-.highlightDott.orange {
+.highlightdot.orange {
   background-color: orange;
 }
 
-.highlightDott.yellow {
+.highlightdot.yellow {
   background-color: yellow;
 }
 
-.highlightDott.green {
+.highlightdot.green {
   background-color: green;
 }
 
-.highlightDott.blue {
+.highlightdot.blue {
   background-color: blue;
 }
 
-.highlightDott.purple {
+.highlightdot.purple {
   background-color: purple;
 }
 
 .switchlight,
-.highlightDott:not(:last-child) {
+.highlightdot:not(:last-child) {
   margin-right: 0.5rem;
 }
 

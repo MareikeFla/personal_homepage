@@ -90,6 +90,8 @@ nav {
 
 .card:first-child p {
   color: var(--highlightColor);
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 .welcome {
@@ -103,6 +105,7 @@ nav {
 .card:not(:first-child) {
   background-color: var(--darkerColor);
   transition: all 0.2s ease-in-out;
+  position: relative;
 }
 
 .card:not(:first-child):hover {
@@ -110,4 +113,28 @@ nav {
   height: 15rem;
   background-color: var(--brighterColor);
   box-shadow: var(--shadow);
+}
+
+.lablecard {
+  background-color: var(--baseColor);
+  height: 3rem;
+  width: 10rem;
+  border-radius: 8px;
+  position: absolute;
+  top: 30px;
+  left: -10px;
+}
+
+footer {
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkerColor);
+}
+
+footer a,
+footer p {
+  color: #c9c9c9;
+  margin: 0 5px;
 }

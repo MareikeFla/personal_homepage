@@ -50,6 +50,10 @@ main {
 }
 
 @media (max-width: 420px) {
+  .colorBox {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .switchlight {
@@ -124,6 +128,7 @@ main {
     color: var(--highlightColor);
     text-shadow: 1px 2px 2px var(--baseColor), 0 0 0 #000,
       1px 4px 2px var(--baseColor);
+    margin-top: -150px;
   }
 }
 

@@ -54,6 +54,7 @@ main {
   .colorBox {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
   }
 }
 
@@ -111,7 +112,7 @@ main {
 
 @media (max-width: 420px) {
   .card {
-    height: 10rem;
+    height: 8rem;
     margin: 1.5rem 1rem 0 1rem;
     border-radius: 10px;
   }
@@ -132,16 +133,27 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    outline: 2px solid hotpink;
-    height: ma;
+    height: 6rem;
+    margin-top: 0.7rem;
   }
 }
 
-.welcomeCard p {
-  color: var(--highlightColor);
-  font-size: 1.2rem;
-  margin-top: 10px;
+@media (max-width: 420px) {
+  .welcomeCard p {
+    color: var(--highlightColor);
+    font-size: 1rem;
+    margin-top: 10px;
+  }
 }
+
+@media (min-width: 420px) {
+  .welcomeCard p {
+    color: var(--highlightColor);
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+}
+
 @media (min-width: 420px) {
   .welcome {
     font-size: 2.5rem;
@@ -157,7 +169,6 @@ main {
     color: var(--highlightColor);
     text-shadow: 1px 2px 2px var(--baseColor), 0 0 0 #000,
       1px 4px 2px var(--baseColor);
-    margin-top: -150px;
   }
 }
 
@@ -176,21 +187,40 @@ main {
     box-shadow: var(--shadow);
   }
 }
+@media (min-width: 420px) {
+  .lablecard {
+    background-color: var(--baseColor);
+    height: 3rem;
+    width: 10rem;
+    border-radius: 8px;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 1.3rem;
+    color: var(--highlightColor);
+    box-shadow: var(--darkestColor) 7px 7px 10px 2px;
+  }
+}
 
-.lablecard {
-  background-color: var(--baseColor);
-  height: 3rem;
-  width: 10rem;
-  border-radius: 8px;
-  position: absolute;
-  top: 30px;
-  left: -10px;
-  display: flex;
-  align-items: center;
-  padding-left: 15px;
-  font-size: 1.3rem;
-  color: var(--highlightColor);
-  box-shadow: var(--darkestColor) 7px 7px 10px 2px;
+@media (max-width: 420px) {
+  .lablecard {
+    background-color: var(--baseColor);
+    height: 3rem;
+    width: 10rem;
+    border-radius: 8px;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 1.3rem;
+    color: var(--highlightColor);
+    box-shadow: var(--darkestColor) 7px 7px 10px 2px;
+  }
 }
 
 .projectTitle,

@@ -208,16 +208,16 @@ main {
 @media (max-width: 420px) {
   .lablecard {
     background-color: var(--baseColor);
-    height: 3rem;
-    width: 10rem;
+    height: 2rem;
+    width: 6rem;
     border-radius: 8px;
     position: absolute;
-    top: 30px;
+    top: 10px;
     left: -10px;
     display: flex;
     align-items: center;
-    padding-left: 15px;
-    font-size: 1.3rem;
+    padding-left: 10px;
+    font-size: 1rem;
     color: var(--highlightColor);
     box-shadow: var(--darkestColor) 7px 7px 10px 2px;
   }
@@ -231,51 +231,111 @@ main {
   color: var(--textcolor);
 }
 
-.projectTitle {
-  top: 5.5rem;
-  left: 4rem;
-  font-weight: normal;
+@media (min-width: 420px) {
+  .projectTitle {
+    top: 5.5rem;
+    left: 4rem;
+    font-weight: normal;
+  }
+
+  .projectUndertitle {
+    top: 7.5rem;
+    left: 4rem;
+  }
+
+  .puplishedYear::before {
+    margin: 0 5px;
+    content: "•";
+  }
 }
 
-.projectUndertitle {
-  top: 7.5rem;
-  left: 4rem;
+@media (max-width: 420px) {
+  .projectTitle {
+    top: 3rem;
+    left: 2rem;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  .projectUndertitle {
+    top: 4.5rem;
+    left: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .puplishedYear::before {
+    margin: 0 5px;
+    content: "•";
+  }
 }
 
-.puplishedYear::before {
-  margin: 0 5px;
-  content: "•";
+@media (min-width: 420px) {
+  .tagBox {
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    height: 1.5rem;
+    width: fit-content;
+    margin: 0 14px 0 0;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: var(--baseColor);
+    font-size: 0.9rem;
+    box-shadow: var(--highlightColor) 0 0 3px 2px;
+    color: var(--textcolor);
+  }
 }
 
-.tagBox {
-  position: absolute;
-  top: 10rem;
-  left: 4rem;
-  display: flex;
-  width: 70%;
-  flex-wrap: wrap;
-}
+@media (max-width: 420px) {
+  .tagBox {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-.tag {
-  height: 1.5rem;
-  width: fit-content;
-  margin: 0 14px 0 0;
-  padding: 5px;
-  border-radius: 2px;
-  background-color: var(--baseColor);
-  font-size: 0.9rem;
-  box-shadow: var(--highlightColor) 0 0 3px 2px;
-  color: var(--textcolor);
+  .tag {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 2px;
+    background-color: var(--baseColor);
+    font-size: 0.7rem;
+    box-shadow: var(--highlightColor) 0 0 3px 2px;
+    color: var(--textcolor);
+  }
 }
 
 /* FOOTER */
-
-footer {
-  height: 3.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--darkerColor);
+@media (min-width: 420px) {
+  footer {
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkerColor);
+  }
+}
+@media (max-width: 420px) {
+  footer {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkerColor);
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+  }
 }
 
 footer a,

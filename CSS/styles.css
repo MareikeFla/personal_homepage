@@ -12,7 +12,7 @@
   --brighterColor: #ffffff;
   --darkerColor: #edeff1;
   --darkestColor: #d2d3d4;
-  --highlightColor: rgba(2, 209, 195, 0.8);
+  --highlightColor: rgba(2, 161, 209, 0.8);
   --shadow: #c9c7c7 0 0 25px 8px;
   --textcolor: #464646;
 }
@@ -125,9 +125,8 @@ main {
 /* STYLING PROJECT CARDS */
 
 .card {
-  width: 90%;
   height: 15rem;
-  margin: 0 auto 2rem auto;
+  margin: 0 2rem 2rem 2rem;
   border-radius: 10px;
 }
 
@@ -139,7 +138,7 @@ main {
 }
 @media (hover: hover) {
   .card:not(.welcomeCard):hover {
-    width: 95%;
+    transform: scale(1.04);
     background-color: var(--brighterColor);
     box-shadow: var(--shadow);
   }

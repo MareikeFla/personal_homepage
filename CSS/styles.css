@@ -49,6 +49,9 @@ main {
   }
 }
 
+@media (max-width: 420px) {
+}
+
 .switchlight {
   width: 1rem;
   height: 1rem;

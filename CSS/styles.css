@@ -72,29 +72,28 @@ main {
   border-radius: 1rem;
   margin: 5px;
 }
-
 .highlightdot.red {
-  background-color: red;
+  background-color: rgba(204, 0, 0, 0.8);
 }
 
 .highlightdot.orange {
-  background-color: orange;
+  background-color: rgba(244, 157, 7, 0.8);
 }
 
 .highlightdot.yellow {
-  background-color: yellow;
+  background-color: rgb(237, 230, 9);
 }
 
 .highlightdot.green {
-  background-color: green;
+  background-color: rgba(72, 200, 25, 0.8);
 }
 
 .highlightdot.blue {
-  background-color: blue;
+  background-color: rgba(0, 170, 204, 0.8);
 }
 
 .highlightdot.purple {
-  background-color: purple;
+  background-color: rgba(191, 25, 200, 0.8);
 }
 
 .switchlight,

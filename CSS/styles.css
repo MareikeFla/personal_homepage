@@ -34,17 +34,19 @@ main {
 
 /* COLORBOX and WELCCOME */
 
-.colorBoxWrap {
-  position: absolute;
-  height: 100%;
-  right: 0;
-}
+@media (min-width: 420px) {
+  .colorBoxWrap {
+    position: absolute;
+    height: 100%;
+    right: 0;
+  }
 
-.colorBox {
-  width: max-content;
-  position: sticky;
-  top: 70px;
-  z-index: 1;
+  .colorBox {
+    width: max-content;
+    position: sticky;
+    top: 70px;
+    z-index: 1;
+  }
 }
 
 .switchlight {
@@ -104,7 +106,7 @@ main {
   font-size: 1.2rem;
   margin-top: 10px;
 }
-@media (min-width: 300px) {
+@media (min-width: 420px) {
   .welcome {
     font-size: 2.5rem;
     color: var(--highlightColor);
@@ -113,9 +115,9 @@ main {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 420px) {
   .welcome {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--highlightColor);
     text-shadow: 1px 2px 2px var(--baseColor), 0 0 0 #000,
       1px 4px 2px var(--baseColor);

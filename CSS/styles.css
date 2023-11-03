@@ -15,6 +15,7 @@
   --highlightColor: rgba(2, 161, 209, 0.8);
   --shadow: #c9c7c7 0 0 25px 8px;
   --textcolor: #464646;
+  --breakPoint: 420px;
 }
 
 html {
@@ -100,12 +101,40 @@ main {
   margin-right: 0.5rem;
 }
 
-.welcomeCard {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
+@media (min-width: 420px) {
+  .card {
+    height: 15rem;
+    margin: 0 2rem 2rem 2rem;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .card {
+    height: 10rem;
+    margin: 1.5rem 1rem 0 1rem;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 420px) {
+  .welcomeCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .welcomeCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    outline: 2px solid hotpink;
+    height: ma;
+  }
 }
 
 .welcomeCard p {
@@ -133,12 +162,6 @@ main {
 }
 
 /* STYLING PROJECT CARDS */
-
-.card {
-  height: 15rem;
-  margin: 0 2rem 2rem 2rem;
-  border-radius: 10px;
-}
 
 .card:not(.welcomeCard) {
   background-color: var(--darkerColor);

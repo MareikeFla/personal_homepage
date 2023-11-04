@@ -15,6 +15,7 @@
   --highlightColor: rgba(2, 161, 209, 0.8);
   --shadow: #c9c7c7 0 0 25px 8px;
   --textcolor: #464646;
+  --breakPoint: 420px;
 }
 
 html {
@@ -49,6 +50,14 @@ main {
   }
 }
 
+@media (max-width: 420px) {
+  .colorBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
 .switchlight {
   width: 1rem;
   height: 1rem;
@@ -63,29 +72,28 @@ main {
   border-radius: 1rem;
   margin: 5px;
 }
-
 .highlightdot.red {
-  background-color: red;
+  background-color: rgba(204, 0, 0, 0.8);
 }
 
 .highlightdot.orange {
-  background-color: orange;
+  background-color: rgba(244, 157, 7, 0.8);
 }
 
 .highlightdot.yellow {
-  background-color: yellow;
+  background-color: rgb(237, 230, 9);
 }
 
 .highlightdot.green {
-  background-color: green;
+  background-color: rgba(72, 200, 25, 0.8);
 }
 
 .highlightdot.blue {
-  background-color: blue;
+  background-color: rgba(0, 170, 204, 0.8);
 }
 
 .highlightdot.purple {
-  background-color: purple;
+  background-color: rgba(191, 25, 200, 0.8);
 }
 
 .switchlight,
@@ -93,19 +101,58 @@ main {
   margin-right: 0.5rem;
 }
 
-.welcomeCard {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
+@media (min-width: 420px) {
+  .card {
+    height: 15rem;
+    margin: 0 2rem 2rem 2rem;
+    border-radius: 10px;
+  }
 }
 
-.welcomeCard p {
-  color: var(--highlightColor);
-  font-size: 1.2rem;
-  margin-top: 10px;
+@media (max-width: 420px) {
+  .card {
+    height: 8rem;
+    margin: 1.5rem 1rem 0 1rem;
+    border-radius: 10px;
+  }
 }
+@media (min-width: 420px) {
+  .welcomeCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .welcomeCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 6rem;
+    margin-top: 0.7rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .welcomeCard p {
+    color: var(--highlightColor);
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 420px) {
+  .welcomeCard p {
+    color: var(--highlightColor);
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+}
+
 @media (min-width: 420px) {
   .welcome {
     font-size: 2.5rem;
@@ -126,12 +173,6 @@ main {
 
 /* STYLING PROJECT CARDS */
 
-.card {
-  height: 15rem;
-  margin: 0 2rem 2rem 2rem;
-  border-radius: 10px;
-}
-
 .card:not(.welcomeCard) {
   background-color: var(--darkerColor);
   transition: all 0.2s ease-in-out;
@@ -145,21 +186,40 @@ main {
     box-shadow: var(--shadow);
   }
 }
+@media (min-width: 420px) {
+  .lablecard {
+    background-color: var(--baseColor);
+    height: 3rem;
+    width: 10rem;
+    border-radius: 8px;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 1.3rem;
+    color: var(--highlightColor);
+    box-shadow: var(--darkestColor) 7px 7px 10px 2px;
+  }
+}
 
-.lablecard {
-  background-color: var(--baseColor);
-  height: 3rem;
-  width: 10rem;
-  border-radius: 8px;
-  position: absolute;
-  top: 30px;
-  left: -10px;
-  display: flex;
-  align-items: center;
-  padding-left: 15px;
-  font-size: 1.3rem;
-  color: var(--highlightColor);
-  box-shadow: var(--darkestColor) 7px 7px 10px 2px;
+@media (max-width: 420px) {
+  .lablecard {
+    background-color: var(--baseColor);
+    height: 2rem;
+    width: 6rem;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 1rem;
+    color: var(--highlightColor);
+    box-shadow: var(--darkestColor) 7px 7px 10px 2px;
+  }
 }
 
 .projectTitle,
@@ -170,51 +230,111 @@ main {
   color: var(--textcolor);
 }
 
-.projectTitle {
-  top: 5.5rem;
-  left: 4rem;
-  font-weight: normal;
+@media (min-width: 420px) {
+  .projectTitle {
+    top: 5.5rem;
+    left: 4rem;
+    font-weight: normal;
+  }
+
+  .projectUndertitle {
+    top: 7.5rem;
+    left: 4rem;
+  }
+
+  .puplishedYear::before {
+    margin: 0 5px;
+    content: "•";
+  }
 }
 
-.projectUndertitle {
-  top: 7.5rem;
-  left: 4rem;
+@media (max-width: 420px) {
+  .projectTitle {
+    top: 3rem;
+    left: 2rem;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  .projectUndertitle {
+    top: 4.5rem;
+    left: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .puplishedYear::before {
+    margin: 0 5px;
+    content: "•";
+  }
 }
 
-.puplishedYear::before {
-  margin: 0 5px;
-  content: "•";
+@media (min-width: 420px) {
+  .tagBox {
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    height: 1.5rem;
+    width: fit-content;
+    margin: 0 14px 0 0;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: var(--baseColor);
+    font-size: 0.9rem;
+    box-shadow: var(--highlightColor) 0 0 3px 2px;
+    color: var(--textcolor);
+  }
 }
 
-.tagBox {
-  position: absolute;
-  top: 10rem;
-  left: 4rem;
-  display: flex;
-  width: 70%;
-  flex-wrap: wrap;
-}
+@media (max-width: 420px) {
+  .tagBox {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-.tag {
-  height: 1.5rem;
-  width: fit-content;
-  margin: 0 14px 0 0;
-  padding: 5px;
-  border-radius: 2px;
-  background-color: var(--baseColor);
-  font-size: 0.9rem;
-  box-shadow: var(--highlightColor) 0 0 3px 2px;
-  color: var(--textcolor);
+  .tag {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 2px;
+    background-color: var(--baseColor);
+    font-size: 0.7rem;
+    box-shadow: var(--highlightColor) 0 0 3px 2px;
+    color: var(--textcolor);
+  }
 }
 
 /* FOOTER */
-
-footer {
-  height: 3.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--darkerColor);
+@media (min-width: 420px) {
+  footer {
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkerColor);
+  }
+}
+@media (max-width: 420px) {
+  footer {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkerColor);
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+  }
 }
 
 footer a,

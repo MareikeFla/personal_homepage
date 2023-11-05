@@ -3,6 +3,8 @@ const buttonBlue = document.querySelector(".highlightdot.blue");
 const buttonOrange = document.querySelector(".highlightdot.orange");
 const buttonGreen = document.querySelector(".highlightdot.green");
 const buttonPurple = document.querySelector(".highlightdot.purple");
+const buttonSwitch = document.querySelector(".switchlight");
+const background = document.querySelector("html");
 let currentButton = buttonBlue;
 
 function setupEventListener(button, color) {

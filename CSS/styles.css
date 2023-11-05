@@ -9,9 +9,13 @@
 
 :root {
   --baseColor: #f6f6f6;
+  --baseColorDark: red;
   --brighterColor: #ffffff;
+  --brighterColorDark: ;
   --darkerColor: #edeff1;
+  --darkerColorDark: ;
   --darkestColor: #d2d3d4;
+  --darkestColorDark: ;
   --highlightRed: rgba(204, 0, 0, 0.8);
   --highlightOrange: rgba(244, 157, 7, 0.8);
   --highlightGreen: rgba(72, 200, 25, 0.8);
@@ -79,7 +83,7 @@ main {
   margin: 5px;
   cursor: pointer;
   border: 1px solid var(--baseColor);
-  box-shadow: inset var(--textcolor) 0 0 2px 2px;
+  box-shadow: inset var(--baseColor) 0 0 6px 2px;
 }
 .highlightdot.red {
   background-color: var(--highlightRed);
@@ -213,6 +217,7 @@ main {
     font-size: 1.3rem;
     color: var(--highlightColor);
     box-shadow: var(--darkestColor) 7px 7px 10px 2px;
+    transition: color 1s;
   }
 }
 
@@ -231,6 +236,7 @@ main {
     font-size: 1rem;
     color: var(--highlightColor);
     box-shadow: var(--darkestColor) 7px 7px 10px 2px;
+    transition: color 1s;
   }
 }
 
@@ -300,6 +306,7 @@ main {
     font-size: 0.9rem;
     box-shadow: var(--highlightColor) 0 0 3px 2px;
     color: var(--textcolor);
+    transition: box-shadow 1s;
   }
 }
 
@@ -323,6 +330,7 @@ main {
     font-size: 0.7rem;
     box-shadow: var(--highlightColor) 0 0 3px 2px;
     color: var(--textcolor);
+    transition: box-shadow 1s;
   }
 }
 

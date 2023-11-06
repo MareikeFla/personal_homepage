@@ -187,13 +187,6 @@ main {
   }
 }
 
-.contactLink {
-  outline: 1px solid hotpink;
-  width: 1rem;
-  height: 2rem;
-  margin-top: 1rem;
-}
-
 /* STYLING PROJECT CARDS */
 
 .card:not(.welcomeCard) {
@@ -201,6 +194,7 @@ main {
   transition: all 0.2s ease-in-out;
   position: relative;
   letter-spacing: 1px;
+  overflow: hidden;
 }
 @media (hover: hover) {
   .card:not(.welcomeCard):hover {
@@ -211,15 +205,15 @@ main {
 }
 
 @media (max-width: 500px) {
-  .imgPreview {
+  .previewImg {
     display: none;
   }
 }
 
 @media (min-width: 500px) {
-  .imgPreview {
-    width: 100px;
-    height: 130px;
+  .previewImg {
+    width: 130px;
+    height: 160px;
     position: absolute;
     top: 2rem;
     right: 2.5rem;
@@ -227,13 +221,13 @@ main {
   }
 }
 
-@media (min-width: 800px) {
-  .imgPreview {
-    width: 130px;
-    height: 160px;
+@media (min-width: 750px) {
+  .previewImg {
+    width: 220px;
+    height: 240px;
     position: absolute;
-    top: 2.5rem;
-    right: 3.5rem;
+    top: 3rem;
+    right: 6rem;
     transform: rotate(-15deg);
   }
 }

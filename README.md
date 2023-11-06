@@ -6,11 +6,11 @@ You can follow my progress here.
 ### Comming next
 
 [x] Add a README.md <br>
-[] Fix positioning in the header <br>
-[] Make nav a switch-button <br>
-[] Add Picture to the project cards <br>
-[] change highligt color by clicking a color dot v
-[] switch to darkmode <br>
+[x] Fix positioning in the header <br>
+[x] Add Picture to the project cards <br>
+[x] change highlight color by clicking a color dot <br>
+[] install switch to darkmode <br>
+[] Think about "contact me" Section
 
 ### Draft
 

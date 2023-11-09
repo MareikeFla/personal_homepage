@@ -1,0 +1,175 @@
+.card:not(.welcomeCard) {
+  background-color: var(--darkerColor);
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  letter-spacing: 1px;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .card:not(.welcomeCard):hover {
+    transform: scale(1.04);
+    background-color: var(--brighterColor);
+    box-shadow: var(--shadow);
+  }
+}
+
+@media (max-width: 500px) {
+  .previewImg {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .previewImg {
+    width: 130px;
+    height: 160px;
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    transform: rotate(-15deg);
+  }
+}
+
+@media (min-width: 750px) {
+  .previewImg {
+    width: 220px;
+    height: 240px;
+    position: absolute;
+    top: 3rem;
+    right: 6rem;
+    transform: rotate(-15deg);
+  }
+}
+
+@media (min-width: 420px) {
+  .lablecard {
+    background-color: var(--baseColor);
+    height: 3rem;
+    width: 10rem;
+    border-radius: 8px;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 1.3rem;
+    color: var(--highlightColor);
+    box-shadow: var(--darkestColor) 7px 7px 10px 2px;
+    transition: color 1s;
+  }
+}
+
+@media (max-width: 420px) {
+  .lablecard {
+    background-color: var(--baseColor);
+    height: 2rem;
+    width: 6rem;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 1rem;
+    color: var(--highlightColor);
+    box-shadow: var(--darkestColor) 7px 7px 10px 2px;
+    transition: color 1s;
+  }
+}
+
+.projectTitle,
+.projectUndertitle,
+.puplishedYear {
+  width: fit-content;
+  position: absolute;
+  color: var(--textcolor);
+}
+
+@media (min-width: 420px) {
+  .projectTitle {
+    top: 5.5rem;
+    left: 4rem;
+    font-weight: normal;
+  }
+
+  .projectUndertitle {
+    top: 7.5rem;
+    left: 4rem;
+  }
+
+  .puplishedYear::before {
+    margin: 0 5px;
+    content: "•";
+  }
+}
+
+@media (max-width: 420px) {
+  .projectTitle {
+    top: 3rem;
+    left: 2rem;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  .projectUndertitle {
+    top: 4.5rem;
+    left: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .puplishedYear::before {
+    margin: 0 5px;
+    content: "•";
+  }
+}
+
+@media (min-width: 420px) {
+  .tagBox {
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    height: 1.5rem;
+    width: fit-content;
+    margin: 0 14px 0 0;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: var(--baseColor);
+    font-size: 0.9rem;
+    box-shadow: var(--highlightColor) 0 0 3px 2px;
+    color: var(--textcolor);
+    transition: box-shadow 1s;
+  }
+}
+
+@media (max-width: 420px) {
+  .tagBox {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .tag {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 2px;
+    background-color: var(--baseColor);
+    font-size: 0.7rem;
+    box-shadow: var(--highlightColor) 0 0 3px 2px;
+    color: var(--textcolor);
+    transition: box-shadow 1s;
+  }
+}

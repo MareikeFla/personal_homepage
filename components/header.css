@@ -1,0 +1,57 @@
+@media (min-width: 420px) {
+  .welcomeCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .welcomeCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 6rem;
+    margin-top: 0.7rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .welcomeCard p {
+    color: var(--highlightColor);
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: color 1s;
+  }
+}
+
+@media (min-width: 420px) {
+  .welcomeCard p {
+    color: var(--highlightColor);
+    font-size: 1.2rem;
+    margin-top: 10px;
+    transition: color 1s;
+  }
+}
+
+@media (min-width: 420px) {
+  .welcome {
+    font-size: 2.5rem;
+    color: var(--highlightColor);
+    text-shadow: 1px 2px 2px var(--baseColor), 0 0 0 #000,
+      1px 4px 2px var(--baseColor);
+    transition: color 1s;
+  }
+}
+
+@media (max-width: 420px) {
+  .welcome {
+    font-size: 1.8rem;
+    color: var(--highlightColor);
+    text-shadow: 1px 2px 2px var(--baseColor), 0 0 0 #000,
+      1px 4px 2px var(--baseColor);
+    transition: color 1s;
+  }
+}

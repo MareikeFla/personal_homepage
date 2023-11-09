@@ -1,4 +1,4 @@
-@media (min-width: 420px) {
+/* @media (min-width: 768px) {
   footer {
     height: 3.5rem;
     display: flex;
@@ -6,8 +6,8 @@
     align-items: center;
     background-color: var(--darkerColor);
   }
-}
-@media (max-width: 420px) {
+} */
+@media (max-width: 768px) {
   footer {
     height: 2rem;
     display: flex;

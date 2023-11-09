@@ -1,19 +1,19 @@
-@media (min-width: 420px) {
+/* @media (min-width: 768px) {
   .colorBoxWrap {
     position: absolute;
     height: 100%;
     right: 0px;
-  }
+  } */
 
-  .colorBox {
-    width: max-content;
-    position: sticky;
-    top: 60px;
-    z-index: 1;
-  }
+.colorBox {
+  width: max-content;
+  position: sticky;
+  top: 60px;
+  z-index: 1;
 }
+/* } */
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
   .colorBox {
     display: flex;
     justify-content: center;

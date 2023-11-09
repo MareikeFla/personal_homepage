@@ -32,23 +32,25 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 main {
   max-width: 60rem;
+  min-width: 40rem;
   position: relative;
   flex: 1;
 }
 
-@media (min-width: 420px) {
+/* @media (min-width: 768px) {
   .card {
     height: 15rem;
     margin: 0 3rem 2rem 3rem;
     border-radius: 10px;
   }
-}
+} */
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
   .card {
     height: 8rem;
     margin: 1.5rem 1rem 0 1rem;
